@@ -1,0 +1,15 @@
+{
+  "name": "chat-app",
+  "version": "1.0.0",
+  "description": "a simple desktop chat app made with electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Allison Pierce",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^1.8.4",
+    "firebase": "^4.13.1"
+  }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatroom</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+</head>
+<body onload="loadChatroomData()">
+    <aside id="channel-sidebar">
+        <nav class="sidebar-nav">
+            <h3 class="list-title">Channels</h3>
+            <ul id="channels" class="chat-list">
+                <li class="list-element channel">Sample 1</li>
+                <li class="list-element channel">Sample 2</li>
+                <li class="list-element channel">Sample 3</li>
+            </ul>
+        </nav>
+    </aside>
+
+    <section id="chatbox">
+        <ul class="chatrooms chat-list">
+            <li class="chatroom">Sample Chatroom</li>
+        </ul>
+        <div id="message-box"></div>
+        <form id="message-form">
+            <img class="user-icon" src="images/default-icon.png">
+            <input type="text" id="message-input-field" placeholder="Type message...">
+        </form>
+    </section>
+
+    <aside id="member-sidebar">
+        <nav class="sidebar-nav">
+            <h3 class="list-title">Chat Members</h3>
+            <ul id="members" class="chat-list">
+                <li class="list-element member">Sample User 1</li>
+            </ul>
+        </nav>
+    </aside>
+</body>
+<script src="chatroom.js"></script>
+</html>
